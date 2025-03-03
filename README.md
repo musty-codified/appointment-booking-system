@@ -47,7 +47,7 @@ The project is divided into two folder structure:
 ---
 
 ### 3.2 Setup the Frontend ###
-- **Navigate to the frontend::**
+- **Navigate to the frontend:**
   `cd ../appointment-booking-api`
 
   `npm install`

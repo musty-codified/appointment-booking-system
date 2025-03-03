@@ -4,12 +4,12 @@ An Appointment Booking API with a **Node.js & Express backend** and a **React.js
 **JWT-based authentication**.
 
 ## 1. Prerequisites ##
-### Tech Stack###
-- **React.js (AntD UI)**
+### Tech Stack ###
+- **React.js**
 - **Express.js**
 - **Node.js**
 - **Bootstrap** 
-- **SQL Database** 
+- **Styling:** Bootstrap + AntD
 - **SQL Database** 
 - **JWT (JSON Web Tokens)**
 
@@ -21,7 +21,7 @@ The project is divided into two folder structure:
 
 - appointment-booking-api (Node.js & Express Backend)
 - appointment-booking-ui (React.js Frontend)
-- README.md # Project Documentation
+- README.md
 
 ---
 
@@ -31,10 +31,13 @@ The project is divided into two folder structure:
 
 - **Clone the repository:**
   `git clone https://github.com/musty-codified/appointment-booking-system.git`
-- **Navigate to the appointment-booking-api project::**
+- **Navigate to the backend:**
   `cd appointment-booking-system/appointment-booking-api`
+
   `npm install`
-- **Configure environment:** Create and configure `.env` with your SQL Database configurations.
+- **Configure environment:** Create and configure `.env` with your custom configurations.
+
+`cp .env.example .env`
 - **Run the backend project:**
 
   `npm start`
@@ -44,8 +47,9 @@ The project is divided into two folder structure:
 ---
 
 ### 3.2 Setup the Frontend ###
-- **Navigate to the appointment-booking-api project::**
+- **Navigate to the frontend::**
   `cd ../appointment-booking-api`
+  
   `npm install`
 - **Run the React project:**
 

@@ -37,7 +37,7 @@ The project is divided into two folder structure:
   `npm install`
 - **Configure environment:** Create and configure `.env` with your custom configurations.
 
-`cp .env.example .env`
+  `cp .env.example .env`
 - **Run the backend project:**
 
   `npm start`
@@ -49,7 +49,7 @@ The project is divided into two folder structure:
 ### 3.2 Setup the Frontend ###
 - **Navigate to the frontend::**
   `cd ../appointment-booking-api`
-  
+
   `npm install`
 - **Run the React project:**
 

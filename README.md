@@ -58,24 +58,24 @@ The project is divided into two folder structure:
 
 ---
 
-## 4. API Documentation ##
+## 4. Setup MySQL Database ##
 
-### 4.1 User Authentication APIs ###
-
-- (POST) [Register  User](http://localhost:8000/api/auth/register) `/api/auth/register`
-- (POST) [User Login](http://localhost:8000/api/auth/login) `/api/auth/login`
-
-### 4.2 Appointment Bookings APIs ###
-
-- (POST) [Add a Booking](http://localhost:8000/api/appointments) `/api/appointments`
-- (GET)  [Fetch all Bookings](http://localhost:8000/api/appointments)`/api/appointments?pageNumber=1&pageSize=2`
+- **Install MySQL**
+- **Import the database dump:**
+  `mysql -u root -p bookings-db < appointment_booking_dump.sql`
 
 ---
 
-### 5. API Authentication
+## 5. Access the Application ##
 
-- Most API endpoints require a **JWT token** for access.
-- Obtain a token via the **User Login API** and pass it in the request header:
+- **Frontend:** http://localhost:3000
+- **Backend:** http://localhost:8000
+
+
+## 6. API Authentication ##
+
+- API endpoints require a **JWT token** for access.
+- Obtain a token via the **User Login** and pass it in the request header:
   ```sh
   Authorization: Bearer <your-token-here>
   ```

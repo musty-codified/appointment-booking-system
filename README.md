@@ -21,6 +21,7 @@ The project is divided into two folder structure:
 
 - appointment-booking-api (Node.js & Express Backend)
 - appointment-booking-ui (React.js Frontend)
+- appointment_booking_dump.sql
 - README.md
 
 ---

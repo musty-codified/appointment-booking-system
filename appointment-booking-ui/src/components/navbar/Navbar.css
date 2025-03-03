@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&family=Jost:wght@200;300;400;500;600&display=swap');
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #003366;
+  color: white;
+  height: 60px;
+}
+
+.navbar-links{
+    display: flex;
+    gap: 20px; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar-links li {
+  display: inline-block;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-links a:hover {
+  background-color: #0056b3; 
+  border-radius: 5px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-logo{
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    height: 75px;
+    margin: 0 15px 5px 0;
+    max-width: 100px;
+}
+
+a:hover, a:focus{
+  text-decoration:none;
+}
+
+ul li{
+    list-style: none;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: .9rem;
+    color: black;
+
+}
+
+ul{
+    gap: .5rem;
+    padding: 0.5rem 1rem;
+  }
+
+   ul li:hover{
+    color: #424040;
+  }   
+  
+  h1{
+    display: inline-block;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .65; 
+}
+  
+.icon {
+  font-size: 28px;
+}
+nav.scrolled {
+  padding: 0px 0;
+  background-color: #121212;
+}
+
+

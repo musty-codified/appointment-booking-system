@@ -1,5 +1,6 @@
 import dotenv from 'dotenv';
 import express from 'express';
+import cors from 'cors';
 import logger from './middlewares/loggerMiddleware.js';
 import errorHandler from './middlewares/errorMiddleware.js';
 import authRoutes from './routes/authRoutes.js'
@@ -10,9 +11,14 @@ dotenv.config();
 const PORT = process.env.PORT || 9000
 const app = express();
 
+//JWT verifier middleware
+// app.use(verifyToken, isAdmin)
 //Req body parser middleware
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
+
+app.use(cors());
+
 
 //Logger middleware
 app.use(logger);
@@ -23,6 +29,8 @@ app.use("/api/appointments", bookingRoutes);
 
 //Error handler middleware
 app.use(errorHandler);
+
+
 
 app.listen(PORT, ()=>{
     console.log(`Server running on port ${PORT}`);

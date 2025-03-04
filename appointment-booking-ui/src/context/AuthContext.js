@@ -70,8 +70,15 @@ const DataProvider = ({ children }) => {
         throw new Error("Unexpected response format");
       }
     } catch (err) {
-      errorNotification(err.response.data.message);
-      console.log(err.response.data.message);
+      if(err.response){
+        console.log(err.response.data.message);
+        if(err.response.status === 409 ){
+          errorNotification(err.response.data.message);
+
+        } else{
+          errorNotification(err.response.data.message);
+        }
+      }
     }
   };
 

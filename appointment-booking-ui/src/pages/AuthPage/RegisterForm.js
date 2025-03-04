@@ -45,7 +45,6 @@ const RegisterForm = () => {
 
         <h2>Register</h2>
 
-        {/* <div className='mb-3'> */}
         <label>Username</label>
      <input 
           type="email" 
@@ -54,9 +53,7 @@ const RegisterForm = () => {
           name="email"
           value={registerFormData.email}
           required/>
-         {/* </div> */}
         
-        {/* <div className='mb-3'> */}
         <label>Password</label>
       <input 
            type="password" 
@@ -65,8 +62,8 @@ const RegisterForm = () => {
            name="password"
            value={registerFormData.password}
            required/>
-      {/* </div> */}
-       <button type="submit" className = "btn btn-primary "onClick = {()=>registerConfig(registerFormData)}>
+
+       <button type="submit" className = "btn btn-primary ">
              Register
          </button>
 

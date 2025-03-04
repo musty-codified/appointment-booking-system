@@ -21,6 +21,8 @@ app.use(cors());
 //Logger middleware
 app.use(logger);
 
+
+
 //Req mapping middleware
 app.use("/api/auth", authRoutes);
 app.use("/api/appointments", bookingRoutes);

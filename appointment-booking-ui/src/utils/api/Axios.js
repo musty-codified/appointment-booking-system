@@ -2,9 +2,20 @@ import axios from "axios";
 // const baseUrl = "http://localhost:8000/api/";
 
 const baseUrl = "https://appointment-booking-api-ufj8.onrender.com/api/";
+console.log("Base API URL:", baseUrl);
 
-export const apiPost = (path, data) => {
-    return axios.post(`${baseUrl}${path}`, data);
+export const apiPost = async(path, data) => {
+
+  try {
+    console.log("POST URL:", `${baseUrl}${path}`);
+    console.log("DATA SENT:", data);
+    const response = await axios.post(`${baseUrl}${path}`, data);
+    console.log("RESPONSE:", response.data);
+    return response;
+} catch (error) {
+    console.error("ERROR RESPONSE:", error.response);
+    throw error;
+}
 };
 
 export const apiPostAuthorization = (path, data) => {

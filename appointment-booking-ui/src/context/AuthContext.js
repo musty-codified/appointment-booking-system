@@ -2,9 +2,7 @@ import React, { useState, useEffect, createContext } from "react";
 import {
   apiPost,
   apiGet,
-  apiPut,
   apiPostAuthorization,
-  apiDeleteAuthorization,
 } from "../utils/api/Axios.js";
 
 import {
@@ -183,9 +181,7 @@ const DataProvider = ({ children }) => {
     } catch (err) {
       console.error("API Error:", err);
       errorNotification(err.response?.data?.message || "Booking failed");
-    } finally {
-      // setSubmitting(false);
-    }
+    } 
   };
 
   useEffect(() => {
@@ -247,7 +243,7 @@ export const useAuth = () => {
   if (context === "undefined") {
     throw new Error("useAuth must be used within the auth provider");
   }
-  console.log("useAuth Context:", context);
+  // console.log("useAuth Context:", context);
   return context;
 };
 

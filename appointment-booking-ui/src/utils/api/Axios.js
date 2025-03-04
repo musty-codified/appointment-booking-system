@@ -1,6 +1,6 @@
 import axios from "axios";
 // const baseUrl = "http://localhost:8000/api/";
-const baseUrl = "https://appointment-booking-api-ufj8.onrender.com";
+const baseUrl = "https://appointment-booking-api-ufj8.onrender.com/api/";
 
 export const apiPost = (path, data) => {
     return axios.post(`${baseUrl}${path}`, data);

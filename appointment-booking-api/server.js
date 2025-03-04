@@ -11,8 +11,6 @@ dotenv.config();
 const PORT = process.env.PORT || 9000
 const app = express();
 
-//JWT verifier middleware
-// app.use(verifyToken, isAdmin)
 //Req body parser middleware
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));

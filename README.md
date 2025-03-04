@@ -1,6 +1,6 @@
 # Appointment Booking System
 
-Appointment Booking API with a **Node.js & Express backend** and a **React.js frontend**, secured using 
+Appointment Booking System with a **Node.js & Express backend** and a **React.js frontend**, secured using 
 **JWT-based authentication**.
 
 ## 1. Prerequisites ##
@@ -83,3 +83,5 @@ Appointment Booking API with a **Node.js & Express backend** and a **React.js fr
   ```
 
 ---
+
+

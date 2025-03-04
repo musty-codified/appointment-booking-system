@@ -30,7 +30,16 @@ A simple yet functional Appointment Booking System with a **Node.js & Express ba
 
 ---
 
-## 3 Setup & Installation ##
+## 3. Setup MySQL Database ##
+
+- **Install MySQL**
+- **Import the database dump:**
+
+  `mysql -u root -p appointments_app < appointment_booking_dump.sql`
+
+---
+
+## 4 Setup & Installation ##
 
 - **Clone the repository:**
   `git clone https://github.com/musty-codified/appointment-booking-system.git`
@@ -60,14 +69,6 @@ A simple yet functional Appointment Booking System with a **Node.js & Express ba
 
 ---
 
-## 4. Setup MySQL Database ##
-
-- **Install MySQL**
-- **Import the database dump:**
-
-  `mysql -u root -p appointments_app < appointment_booking_dump.sql`
-
----
 
 ## 5. Access the Application ##
 

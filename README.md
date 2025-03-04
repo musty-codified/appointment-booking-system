@@ -18,8 +18,6 @@ Appointment Booking API with a **Node.js & Express backend** and a **React.js fr
 
 ## 2. Project Structure ##
 
-The project is divided into two folder structure:
-
 - appointment-booking-api (Node.js & Express Backend)
 - appointment-booking-ui (React.js Frontend)
 - appointment_booking_dump.sql

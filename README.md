@@ -48,7 +48,6 @@ A simple yet functional Appointment Booking System with a **Node.js & Express ba
 
 - The backend will start on **`http://localhost:8000`**.
 
----
 
 - **Navigate to the frontend:**
 

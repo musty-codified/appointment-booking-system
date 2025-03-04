@@ -73,8 +73,7 @@ const LoginForm = () => {
                           required/>
 
                       <button 
-                      type="submit" 
-                      onClick = {()=>loginConfig(loginFormData, location, navigate)} className="login-btn"
+                      type="submit" className="login-btn"
                       >
                           Log in
                       </button>

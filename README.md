@@ -1,16 +1,15 @@
 # Appointment Booking System
 
-Appointment Booking System with a **Node.js & Express backend** and a **React.js frontend**, secured using 
+A simple yet functional Appointment Booking System with a **Node.js & Express backend** and a **React.js frontend**, secured using 
 **JWT-based authentication**.
 
-## 1. Prerequisites ##
-### Tech Stack ###
+## 1. Tech Stack ##
 
 - **Node.js**
 - **Express.js**
 - **React.js**
 - **Bootstrap** 
-- **Styling:** Bootstrap & AntD
+- **Bootstrap & AntD(styling)** 
 - **MySQL** 
 - **JWT**
 
@@ -20,14 +19,18 @@ Appointment Booking System with a **Node.js & Express backend** and a **React.js
 
 - appointment-booking-api (Node.js & Express Backend)
 - appointment-booking-ui (React.js Frontend)
-- appointment_booking_dump.sql
-- README.md
+- appointment_booking_dump.sql (Database Dump)
+- README.md (Project Documentation)
+
+---
+
+## Live Demo
+- **Frontend:** [https://appointment-booking-ky16itzbp-mustapha-musa-s-projects.vercel.app](https://appointment-booking-ky16itzbp-mustapha-musa-s-projects.vercel.app)
+- **Backend:** [https://appointment-booking-api-ufj8.onrender.com](https://appointment-booking-api-ufj8.onrender.com/api/) 
 
 ---
 
 ## 3 Setup & Installation ##
-
-### 3.1 Setup the Backend ###
 
 - **Clone the repository:**
   `git clone https://github.com/musty-codified/appointment-booking-system.git`
@@ -47,7 +50,6 @@ Appointment Booking System with a **Node.js & Express backend** and a **React.js
 
 ---
 
-### 3.2 Setup the Frontend ###
 - **Navigate to the frontend:**
 
   `cd ../appointment-booking-api`

@@ -64,8 +64,8 @@ const RegisterForm = () => {
            required/>
 
        <button type="submit" className = "btn btn-primary ">
-             Register
-         </button>
+           {isLoading ? 'Registering...' : 'Register'}
+       </button>
 
        <p>
        Already have an account?

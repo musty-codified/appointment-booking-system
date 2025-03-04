@@ -32,6 +32,7 @@ Appointment Booking API with a **Node.js & Express backend** and a **React.js fr
 - **Clone the repository:**
   `git clone https://github.com/musty-codified/appointment-booking-system.git`
 - **Navigate to the backend:**
+
   `cd appointment-booking-system/appointment-booking-api`
 
   `npm install`
@@ -48,6 +49,7 @@ Appointment Booking API with a **Node.js & Express backend** and a **React.js fr
 
 ### 3.2 Setup the Frontend ###
 - **Navigate to the frontend:**
+
   `cd ../appointment-booking-api`
 
   `npm install`
@@ -61,7 +63,8 @@ Appointment Booking API with a **Node.js & Express backend** and a **React.js fr
 
 - **Install MySQL**
 - **Import the database dump:**
-  `mysql -u root -p bookings-db < appointment_booking_dump.sql`
+
+  `mysql -u root -p appointments_app < appointment_booking_dump.sql`
 
 ---
 

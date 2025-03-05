@@ -1,10 +1,10 @@
 # Appointment Booking System
 
-A simple yet functional Appointment Booking System with a **Node.js & Express backend** and a **React.js frontend**, secured using **JWT-based authentication**. Users can book available time slots, while administrators can view all reservations
+A simple yet functional Appointment Booking System with a **Node.js & Express backend** and a **React.js frontend**, secured using **JWT-based authentication**. Users can book available time slots, while administrators can view all reservations.
 
 
 ## 1. Live Demo
-- **Frontend:** [https://appointment-booking-ft8gukdi7-mustapha-musa-s-projects.vercel.app/](https://appointment-booking-ky16itzbp-mustapha-musa-s-projects.vercel.app)
+- **Frontend:** [https://appointment-booking-ft8gukdi7-mustapha-musa-s-projects.vercel.app](https://appointment-booking-ky16itzbp-mustapha-musa-s-projects.vercel.app)
 - **Backend:** [https://appointment-booking-api-ufj8.onrender.com](https://appointment-booking-api-ufj8.onrender.com/api/) 
 ---
 
@@ -40,7 +40,7 @@ appointment-booking-system/
 
 ---
 
-### 5.2 Setup Backend (Node.js + express) ###
+### 5.2 Setup Backend ###
 
 - **Clone the repository:**
   `git clone https://github.com/musty-codified/appointment-booking-system.git`
@@ -80,14 +80,7 @@ appointment-booking-system/
 - **Backend:** http://localhost:8000/api/
 
 
-## 7. API Authentication ##
-
-- API endpoints require a **JWT token** for access.
-- Obtain a token via the **User Login** and pass it in the request header:
-  ```sh
-  Authorization: Bearer <your-token-here>
-  ```
-### 7.1 Admin Role & Login Credentials ###
+## 7. Admin Role & Login Credentials ##
 You can login as an amin using the test account:
 - **email**: Gryffindor@gmail.com, 
 - **password**: Codified#123
@@ -105,16 +98,14 @@ You can login as an amin using the test account:
   Authorization: Bearer <token-here>
   ```
 
-  ### 8.2 MySQL Database ###
+### 8.2 MySQL Database ###
 - MySQL is chosen for its support for complex queries.
 - The database is normalized to ensure data consistency.
 
-
-  ### 8.3 User Experience ###
+### 8.3 User Experience ###
 - Ant Design provides a professional and user-friendly UI
 
 ---
-
 
 ## 9. Booking Conflict-Handling Logic ##
   - The system prevents double-booking of the same time slot facilitated by the MySQL query:

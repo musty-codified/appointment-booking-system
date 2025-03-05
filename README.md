@@ -24,16 +24,23 @@ A simple yet functional Appointment Booking System with a **Node.js & Express ba
 
 ---
 
-## Live Demo
+## 3. Live Demo
 - **Frontend:** [https://appointment-booking-imrndr19w-mustapha-musa-s-projects.vercel.app](https://appointment-booking-ky16itzbp-mustapha-musa-s-projects.vercel.app)
 - **Backend:** [https://appointment-booking-api-ufj8.onrender.com](https://appointment-booking-api-ufj8.onrender.com/api/) 
 
 ---
 
+## 4. Test Admin Credentials ##
 
-## 4 Local Setup & Installation ##
+- **Email:** Gryffindor@gmail.com
+- **Password:** Codified#123
 
-### 4.1 Setup MySQL Database ###
+---
+
+
+## 5. Local Setup & Installation ##
+
+### 5.1 Setup MySQL Database ###
 
 - **Install MySQL**
 - **Import the database dump:**
@@ -42,7 +49,7 @@ A simple yet functional Appointment Booking System with a **Node.js & Express ba
 
 ---
 
-### 4.2 Setup Backend (Node.js + express) ###
+### 5.2 Setup Backend (Node.js + express) ###
 
 - **Clone the repository:**
   `git clone https://github.com/musty-codified/appointment-booking-system.git`
@@ -62,7 +69,7 @@ A simple yet functional Appointment Booking System with a **Node.js & Express ba
 
 ---
 
-### 4.3 Setup Frontend (React.js) ###
+### 5.3 Setup Frontend (React.js) ###
 
 - **Navigate to the frontend:**
 
@@ -76,13 +83,13 @@ A simple yet functional Appointment Booking System with a **Node.js & Express ba
 ---
 
 
-## 5. Access the Application ##
+## 6. Access the Application ##
 
 - **Frontend:** http://localhost:3000
 - **Backend:** http://localhost:8000
 
 
-## 6. API Authentication ##
+## 7. API Authentication ##
 
 - API endpoints require a **JWT token** for access.
 - Obtain a token via the **User Login** and pass it in the request header:

@@ -3,7 +3,7 @@ import './FormCard.css'
 const FormCard = ({children}) => {
 
   return (
-    <div className='form-card container'>
+    <div className='form-card'>
     {children}
 
     </div>

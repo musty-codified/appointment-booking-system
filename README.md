@@ -1,13 +1,12 @@
 # Appointment Booking System
 
-A simple yet functional Appointment Booking System with a **Node.js & Express backend** and a **React.js frontend**, secured using 
-**JWT-based authentication**.
+A simple yet functional Appointment Booking System with a **Node.js & Express backend** and a **React.js frontend**, secured using **JWT-based authentication**.
 
 ## 1. Tech Stack ##
 
 - **Backend:** Node.js, Express.js, MySQL
-- **Frontend** React.js, AntD, BootStrap
-- **Authentication** JWT
+- **Frontend:** React.js, AntD, BootStrap
+- **Authentication:** JWT
 
 ---
 

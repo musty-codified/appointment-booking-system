@@ -73,14 +73,7 @@ appointment-booking-system/
 
 ---
 
-
-## 6. Access the Application ##
-
-- **Frontend:** http://localhost:5000
-- **Backend:** http://localhost:8000/api/
-
-
-## 7. Admin Role & Login Credentials ##
+## 6. Admin Role & Login Credentials ##
 You can login as an amin using the test account:
 - **email**: Gryffindor@gmail.com, 
 - **password**: Codified#123
@@ -88,9 +81,9 @@ You can login as an amin using the test account:
 
 ---
 
-## 8. Justification for Chosen Approach ##
+## 7. Justification for Chosen Approach ##
 
-### 8.1 JWT Authentication ###
+### 7.1 JWT Authentication ###
 
 - Secure, stateless authentication.
 - Token is obtained via the **User Login** and passed in the request header:
@@ -98,16 +91,16 @@ You can login as an amin using the test account:
   Authorization: Bearer <token-here>
   ```
 
-### 8.2 MySQL Database ###
+### 7.2 MySQL Database ###
 - MySQL is chosen for its support for complex queries.
 - The database is normalized to ensure data consistency.
 
-### 8.3 User Experience ###
+### 7.3 User Experience ###
 - Ant Design provides a professional and user-friendly UI
 
 ---
 
-## 9. Booking Conflict-Handling Logic ##
+## 8. Booking Conflict-Handling Logic ##
   - The system prevents double-booking of the same time slot facilitated by the MySQL query:
 
   ```

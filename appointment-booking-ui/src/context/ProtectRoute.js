@@ -10,7 +10,7 @@ export const ProtectAdminRoute = ({children}) => {
     const userRole = localStorage.getItem('role')
     console.log(location)
 
-    if (!isAuthenticated || userRole === "Admin" || userRole === "User"){
+    if (!isAuthenticated || userRole === "admin" || userRole === "user"){
         return (
             <Navigate to= "/login" state={location.state && {from:location}}/>
 
@@ -46,7 +46,7 @@ export const ProtectUserRoute = ({children}) => {
     const isAuthenticated = localStorage.getItem('signature')
     const userRole = localStorage.getItem('roles')
 
-    if (!isAuthenticated || userRole ==="Admin" || userRole === "User" ){
+    if (!isAuthenticated || userRole ==="admin" || userRole === "user" ){
         return (
             <Navigate to= "/login" state={location.state && {from:location}}/>
         )
@@ -58,12 +58,9 @@ export const ProtectUserRoute = ({children}) => {
 
 //Preventing Renders if user is not logged in as ADMIN
 export const AdminAuthRequired = () => {
-    // const { setShowNavbar } = useContext(dataContext)
     const isAuthenticated = localStorage.getItem('signature')
     const userRole = localStorage.getItem('role')
     let tokenValid = null;
-
-    // setShowNavbar(false)
 
     if(isAuthenticated !== ''){
         tokenValid = isTokenValid(isAuthenticated)
@@ -79,8 +76,8 @@ export const AdminAuthRequired = () => {
     }
   
     return (
-        (userRole === "USER_DELETE,USER_EDIT,USER_READ" )  &&  tokenValid ? 
-         <Outlet /> : <Navigate to="/login" state={ { message: "You must login first!" } } />
+        (userRole === "admin" )  &&  tokenValid ? 
+         <Outlet /> : <Navigate to="/login" state={ { message: "You must login as an admin first!" } } />
     )
   }
 

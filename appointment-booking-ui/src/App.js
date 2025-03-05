@@ -25,17 +25,16 @@ function App() {
                 index
                 element={
                   <ProtectUserRoute>
-                    {/* <AppointmentTableView tableTitle={"APPOINTMENTS"} /> */}
                     <UserBooking />
                   </ProtectUserRoute>
                 }
               />
-              <Route element={<AdminAuthRequired/>}>
-              <Route path="admin-dashboard" element={<AppointmentView />} />
-              </Route>
             </Route>
 
-            {/* Whitelisted routes */}
+            <Route element={<AdminAuthRequired/>}>
+              <Route path="/admin-dashboard" element={<AppointmentView />} />
+              </Route>
+
             <Route path="/register" element={<RegisterForm />} />
             <Route path="/login" 
             element={

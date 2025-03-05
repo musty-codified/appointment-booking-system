@@ -31,7 +31,7 @@ A simple yet functional Appointment Booking System with a **Node.js & Express ba
 ---
 
 
-## 4 Setup & Installation ##
+## 4 Local Setup & Installation ##
 
 ### 4.1 Setup MySQL Database ###
 
@@ -42,7 +42,7 @@ A simple yet functional Appointment Booking System with a **Node.js & Express ba
 
 ---
 
-### 4.2 Setup Backend ###
+### 4.2 Setup Backend (Node.js + express) ###
 
 - **Clone the repository:**
   `git clone https://github.com/musty-codified/appointment-booking-system.git`
@@ -62,7 +62,7 @@ A simple yet functional Appointment Booking System with a **Node.js & Express ba
 
 ---
 
-### 4.3 Setup Frontend ###
+### 4.3 Setup Frontend (React.js) ###
 
 - **Navigate to the frontend:**
 

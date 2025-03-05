@@ -19,11 +19,11 @@ export const isTokenValid = (token) => {
 
 export const redirectToUserPage = (location, navigate, role) => {
     let from = location.state?.from?.pathname || ""
-    
+    console.log(from)
       if (isTokenValid(localStorage.getItem("signature"))) {
-        if (role === "Admin") {
-          from = from || "/admin";
-        } else if (role === "User") {
+        if (role === "admin") {
+          from = "/admin-dashboard";
+        } else if (role === "user") {
           from = from || "/";
         }
       } else {

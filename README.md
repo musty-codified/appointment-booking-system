@@ -71,6 +71,8 @@ appointment-booking-system/
 
   `npm start`
 
+  - The frontend will be running on **`http://localhost:8000`**.
+
 ---
 
 ## 6. Admin Role & Login Credentials ##

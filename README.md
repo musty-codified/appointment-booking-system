@@ -76,7 +76,7 @@ appointment-booking-system/
 
 ## 6. Access the Application ##
 
-- **Frontend:** http://localhost:3000
+- **Frontend:** http://localhost:5000
 - **Backend:** http://localhost:8000
 
 

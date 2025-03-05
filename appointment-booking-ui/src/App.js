@@ -39,26 +39,6 @@ function App() {
 
           </Route>
 
-
-
-
-            
-            {/* <Route path="/" element={<Layout />}>
-              <Route
-                index element={
-                  <ProtectUserRoute>
-                    <UserBooking />
-                  </ProtectUserRoute>
-                }
-              />
-            </Route> */}
-{/* 
-            <Route element={<AdminAuthRequired/>}>
-              <Route path="/admin-dashboard" element={<AppointmentView />} />
-              </Route> */}
-
-              <Route path="/" element={<LandingPage />} />
-
             <Route path="/register" element={<RegisterForm />} />
             <Route path="/login" 
             element={

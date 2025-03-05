@@ -18,10 +18,11 @@ A simple yet functional Appointment Booking System with a **Node.js & Express ba
 ## 2. Project Structure ##
 
 ```
-appointment-booking-api/ (Node.js & Express Backend)
-appointment-booking-ui/ (React.js Frontend)
-appointment_booking_dump.sql (Database Dump)
-README.md (Project Documentation)
+appointment-booking-system/
+│──appointment-booking-api (Node.js & Express Backend)
+│──appointment-booking-ui (React.js Frontend)
+│──appointment_booking_dump.sql (Database Dump)
+│──README.md (Project Documentation)
 
 ```
 ---

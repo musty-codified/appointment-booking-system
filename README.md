@@ -4,7 +4,7 @@ A simple yet functional Appointment Booking System with a **Node.js & Express ba
 
 
 ## 1. Live Demo
-- **Frontend:** [https://appointment-booking-ft8gukdi7-mustapha-musa-s-projects.vercel.app](https://appointment-booking-ky16itzbp-mustapha-musa-s-projects.vercel.app)
+- **Frontend:** [https://appointment-booking-6ipaxx0br-mustapha-musa-s-projects.vercel.app/](https://appointment-booking-ky16itzbp-mustapha-musa-s-projects.vercel.app)
 - **Backend:** [https://appointment-booking-api-ufj8.onrender.com](https://appointment-booking-api-ufj8.onrender.com/api/) 
 ---
 

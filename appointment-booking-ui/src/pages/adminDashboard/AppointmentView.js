@@ -38,44 +38,38 @@ const items = [
 const columns = [
   {
     title: "Username",
-    dataIndex: "Username",
+    dataIndex: "username",
     key: "Username",
   },
   {
     title: "Date",
-    dataIndex: "Date",
+    dataIndex: "date",
     key: "Date",
   },
   {
     title: "Time Slot",
-    dataIndex: "Time Slot",
+    dataIndex: "timeSlot",
     key: "Time Slot",
   },
 ];
 
 const AppointmentView = () => {
-  console.log("🟢 AppointmentView component is rendering...");
-
   const { getAllBookings, fetchAllBookings, totalElements } = useAuth();
-
   const [collapsed, setCollapsed] = useState(false);
-
   const activeStyles = {
     color: "springgreen",
   };
 
-  const {
-    token: { colorBgContainer, borderRadiusLG },
-  } = theme.useToken();
+  const { token: { colorBgContainer, borderRadiusLG },} = theme.useToken();
 
   useEffect(() => {
-    console.log("🟢 Calling fetchAllBookings inside useEffect...");
+    console.log("Calling fetchAllBookings inside useEffect...");
     fetchAllBookings();
 
     //  eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  console.log(getAllBookings);
+  console.log("Formatted Bookings Data:", getAllBookings);
 
   return (
     <div>
@@ -125,7 +119,13 @@ const AppointmentView = () => {
                   return <Spin indicator={antIcon}/>
                 } */}
               <Table
-                dataSource={getAllBookings}
+                dataSource={getAllBookings.map((elem)=>({
+                  key: elem.key, 
+                  username: elem.username,
+                  date: elem.date,
+                  timeSlot :elem.timeSlot
+                }
+                  ))}
                 columns={columns}
                 bordered
                 title={() => (
@@ -139,7 +139,7 @@ const AppointmentView = () => {
                 )}
                 pagination={{ pageSize: 10 }}
                 scroll={{ y: 240 }}
-                rowKey={(elem) => elem.id}
+                rowKey={(elem) => elem.key}
               />
               ;
             </div>

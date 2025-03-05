@@ -1,30 +1,19 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Logo from '../../assets/images/logo.svg'
 
-import { AiOutlineClose, AiOutlineMenu} from "react-icons/ai";
-import { useContext } from 'react';
 import { useAuth } from '../../context/AuthContext';
-import Menu from "@mui/icons-material/Menu";
-import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import './Navbar.css'
 
 const Navbar = () => {
   const {logout} = useAuth();  
 
-    const [sideBar, setSideBar] = useState(false);
-
   const getSignature = localStorage.getItem("signature");
   const getRole = localStorage.getItem("role");
-
-  const handleSideBar = () => {
-    setSideBar(!sideBar);
-  };
 
   const handleLogout = () => {
     logout();
   };
-
 
   const activeStyles = {
     fontWeight: "bold",
@@ -47,20 +36,17 @@ const Navbar = () => {
                  style={({isActive})=> isActive ? activeStyles : null}
                  >BOOKINGS</NavLink>
                  </li>
-                
                 </>):
               
                 (<>
                 <li><NavLink className= "nav-link text-dark" 
                    to="/"
                    style={({isActive})=> isActive ? activeStyles : null}
-                 >BOOK US</NavLink>
+                 >BOOK AN APPOINTMENT</NavLink>
                  </li>
                  
-                 </>)
-              
+                 </>)              
               }
-           
 
            { 
            !getSignature ? (<>
@@ -81,8 +67,6 @@ const Navbar = () => {
             to="#" onClick={handleLogout}
             style={({isActive})=> isActive ? activeStyles : null}
             >
-            <ExitToAppIcon className="icon" />
-
               LOGOUT
               </NavLink>
             </li></>)

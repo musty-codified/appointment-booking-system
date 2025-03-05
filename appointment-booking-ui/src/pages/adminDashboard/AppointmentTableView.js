@@ -41,6 +41,8 @@ const AppointmentTableView = ({ tableTitle }) => {
         setShowDrawer={setShowDrawer}
         formLayout={<AddBookingForm setShowDrawer={setShowDrawer} />}
       />
+
+      
       {fetching && (
         <div
           style={{

@@ -123,35 +123,26 @@ const DataProvider = ({ children }) => {
 
   /**=================Fetch All Bookings ================== **/
   const fetchAllBookings = async () => {
-    console.log("fetchAllBookings function is executing...");
-
     try {
       const allBookingsUrl = `${getBookingsUrl}?pageNo=${pageNumber}`;
-      console.log(allBookingsUrl);
-
       setLoading(true);
       const res = await apiGet(allBookingsUrl);
       if (res.data) {
         let data = res.data;
-        console.log(data);
-
-        const formattedData = data.map((booking) => ({
-          key: booking.id,
-          username: `User ${booking.user_id}`,
-          date: new Date(booking.date).toLocaleDateString(),
-          timeSlot: booking.time_slot,
+        const formattedData = data.map((allBookings) => ({
+          key: allBookings.id,
+          username: `User ${allBookings.user_id}`,
+          date: new Date(allBookings.date).toLocaleDateString(),
+          timeSlot: allBookings.time_slot,
         }));
 
         setGetAllBookings(formattedData);
-        console.log("Formatted Bookings Data:", formattedData);
       } else {
         throw new Error("Unexpected response format");
       }
     } catch (err) {
       console.error("Error during login:", err);
-      errorNotification(
-        err.response?.data?.message || "Error fetching bookings"
-      );
+      errorNotification(err.response?.data?.message || "Error fetching bookings");
     }
   };
 

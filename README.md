@@ -76,7 +76,7 @@ appointment-booking-system/
 ---
 
 ## 5. Admin Role & Login Credentials ##
-You can login as an amin using the test account:
+You can login as an Admin using the test account:
 - **email**: Gryffindor@gmail.com, 
 - **password**: Codified#123
 

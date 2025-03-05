@@ -97,7 +97,7 @@ You can login as an Admin using the test account:
 - MySQL is chosen for its support for complex queries.
 - The database is normalized to ensure data consistency.
 
-### 6.3 User Experience ###
+### 6.3 User Interface ###
 - Ant Design provides a professional and user-friendly UI
 
 ---

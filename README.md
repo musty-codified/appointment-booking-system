@@ -71,7 +71,7 @@ appointment-booking-system/
 
   `npm start`
 
-- The frontend will be running on **`http://localhost:8000`**.
+- The frontend will be running on **`http://localhost:5000`**.
 
 ---
 

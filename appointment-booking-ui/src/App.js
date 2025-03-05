@@ -8,6 +8,8 @@ import Page404 from "./pages/404Page/Page404.js";
 import AppointmentView from "./pages/adminDashboard/AppointmentView.js";
 import UserBooking from "./pages/userDashboard/UserBooking.js";
 import Layout from "./components/layout/Layout.js";
+import LandingPage from './pages/landingPage/LandingPage.js';
+
 import {
   ProtectUserRoute,
   IsAuthenticated,
@@ -20,20 +22,42 @@ function App() {
       <DataProvider>
         <Router>
           <Routes>
-            <Route path="/" element={<Layout />}>
+
+          <Route path="/"element={<Layout/>}>
+          <Route index element={
+                  <ProtectUserRoute>
+                     <LandingPage/>
+                 </ProtectUserRoute>
+                         }
+                   />
+
+                <Route path='user-booking' element={<UserBooking/>}/>
+
+                <Route element={<AdminAuthRequired/>}>
+                <Route path="admin-dashboard" element={<AppointmentView />} />
+                </Route>
+
+          </Route>
+
+
+
+
+            
+            {/* <Route path="/" element={<Layout />}>
               <Route
-                index
-                element={
+                index element={
                   <ProtectUserRoute>
                     <UserBooking />
                   </ProtectUserRoute>
                 }
               />
-            </Route>
-
+            </Route> */}
+{/* 
             <Route element={<AdminAuthRequired/>}>
               <Route path="/admin-dashboard" element={<AppointmentView />} />
-              </Route>
+              </Route> */}
+
+              <Route path="/" element={<LandingPage />} />
 
             <Route path="/register" element={<RegisterForm />} />
             <Route path="/login" 

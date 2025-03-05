@@ -29,7 +29,7 @@ const Navbar = () => {
          <a href='/'> <h1>APPOINTMENTS BOOKING</h1></a>
             <ul className= 'navbar-links'>
               {
-                getRole === "Admin" ? (<>
+                getRole === "admin" ? (<>
               
                  <li><NavLink className= "nav-link text-dark"
                  to="/admin-dashboard"
@@ -40,7 +40,7 @@ const Navbar = () => {
               
                 (<>
                 <li><NavLink className= "nav-link text-dark" 
-                   to="/"
+                   to="/user-booking"
                    style={({isActive})=> isActive ? activeStyles : null}
                  >BOOK AN APPOINTMENT</NavLink>
                  </li>
@@ -59,7 +59,7 @@ const Navbar = () => {
             <li> <NavLink className= "nav-link text-dark" 
              to="/register"
              style={({isActive})=> isActive ? activeStyles : null}
-            >REGISTER</NavLink>
+            >GET STARTED</NavLink>
             </li> 
 
           </>) :

@@ -5,13 +5,9 @@ A simple yet functional Appointment Booking System with a **Node.js & Express ba
 
 ## 1. Tech Stack ##
 
-- **Node.js**
-- **Express.js**
-- **React.js**
-- **Bootstrap** 
-- **Bootstrap & AntD(styling)** 
-- **MySQL** 
-- **JWT**
+- **Backend:** Node.js, Express.js, MySQL
+- **Frontend** React.js, AntD, BootStrap
+- **Authentication** JWT
 
 ---
 
@@ -30,14 +26,7 @@ appointment-booking-system/
 ## 3. Live Demo
 - **Frontend:** [https://appointment-booking-ofzfrzjt1-mustapha-musa-s-projects.vercel.app](https://appointment-booking-ky16itzbp-mustapha-musa-s-projects.vercel.app)
 - **Backend:** [https://appointment-booking-api-ufj8.onrender.com](https://appointment-booking-api-ufj8.onrender.com/api/) 
-
----
-
-## 4. Test Admin Credentials ##
-
-- **Email:** Gryffindor@gmail.com
-- **Password:** Codified#123
-
+- **Test Admin Credentials:** Gryffindor@gmail.com,  Codified#123
 ---
 
 

@@ -23,7 +23,7 @@ appointment-booking-system/
 ---
 
 ## 3. Live Demo
-- **Frontend:** [https://appointment-booking-n1efawuvn-mustapha-musa-s-projects.vercel.app](https://appointment-booking-ky16itzbp-mustapha-musa-s-projects.vercel.app)
+- **Frontend:** [https://appointment-booking-ezp7bf7x1-mustapha-musa-s-projects.vercel.app](https://appointment-booking-ky16itzbp-mustapha-musa-s-projects.vercel.app)
 - **Backend:** [https://appointment-booking-api-ufj8.onrender.com](https://appointment-booking-api-ufj8.onrender.com/api/) 
 - **Test Admin Credentials:** Gryffindor@gmail.com,  Codified#123
 ---

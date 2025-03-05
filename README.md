@@ -16,7 +16,7 @@ A simple yet functional Appointment Booking System with a **Node.js & Express ba
 
 ---
 
-## 2. Project Structure ##
+## 3. Project Structure ##
 
 ```
 appointment-booking-system/
@@ -29,9 +29,9 @@ appointment-booking-system/
 ---
 
 
-## 5. Local Setup & Installation ##
+## 4. Local Setup & Installation ##
 
-### 5.1 Setup MySQL Database ###
+### 4.1 Setup MySQL Database ###
 
 - **Install MySQL (if not installed).**
 - **Import the database dump:**
@@ -40,7 +40,7 @@ appointment-booking-system/
 
 ---
 
-### 5.2 Setup Backend ###
+### 4.2 Setup Backend ###
 
 - **Clone the repository:**
   `git clone https://github.com/musty-codified/appointment-booking-system.git`
@@ -60,7 +60,7 @@ appointment-booking-system/
 
 ---
 
-### 5.3 Setup Frontend (React.js) ###
+### 4.3 Setup Frontend (React.js) ###
 
 - **Navigate to the frontend:**
 
@@ -75,7 +75,7 @@ appointment-booking-system/
 
 ---
 
-## 6. Admin Role & Login Credentials ##
+## 5. Admin Role & Login Credentials ##
 You can login as an amin using the test account:
 - **email**: Gryffindor@gmail.com, 
 - **password**: Codified#123
@@ -83,9 +83,9 @@ You can login as an amin using the test account:
 
 ---
 
-## 7. Justification for Chosen Approach ##
+## 6. Justification for Chosen Approach ##
 
-### 7.1 JWT Authentication ###
+### 6.1 JWT Authentication ###
 
 - Secure, stateless authentication.
 - Token is obtained via the **User Login** and passed in the request header:
@@ -93,16 +93,16 @@ You can login as an amin using the test account:
   Authorization: Bearer <token-here>
   ```
 
-### 7.2 MySQL Database ###
+### 6.2 MySQL Database ###
 - MySQL is chosen for its support for complex queries.
 - The database is normalized to ensure data consistency.
 
-### 7.3 User Experience ###
+### 6.3 User Experience ###
 - Ant Design provides a professional and user-friendly UI
 
 ---
 
-## 8. Booking Conflict-Handling Logic ##
+## 7. Booking Conflict-Handling Logic ##
   - The system prevents double-booking of the same time slot facilitated by the MySQL query:
 
   ```

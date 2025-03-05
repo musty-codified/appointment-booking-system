@@ -1,7 +1,7 @@
 import axios from "axios";
-const baseUrl = "http://localhost:8000/api/";
+// const baseUrl = "http://localhost:8000/api/";
 
-// const baseUrl = "https://appointment-booking-api-ufj8.onrender.com/api/";
+const baseUrl = "https://appointment-booking-api-ufj8.onrender.com/api/";
 console.log("Base API URL:", baseUrl);
 
 export const apiPost = async(path, data) => {

@@ -24,15 +24,14 @@ function App() {
           <Routes>
 
           <Route path="/"element={<Layout/>}>
-          <Route index element={
+          <Route index element ={<LandingPage/>}/>
+
+          <Route path="user-booking" element={
                   <ProtectUserRoute>
-                     <LandingPage/>
+                     <UserBooking/>
                  </ProtectUserRoute>
                          }
                    />
-
-                <Route path='user-booking' element={<UserBooking/>}/>
-
                 <Route element={<AdminAuthRequired/>}>
                 <Route path="admin-dashboard" element={<AppointmentView />} />
                 </Route>

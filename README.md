@@ -118,7 +118,7 @@ You can login as an Admin using the test account:
   CONSTRAINT `appointments_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
 )
   ``` 
-  - I've added integrity constraints on the date and time_slot column
+  - I've added integrity constraints on the date and time_slot columns;
   - The UNIQUE KEY will prevent the system from inserting a row with the same date and time_slot as an existing row;
 
   ```

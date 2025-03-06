@@ -103,11 +103,27 @@ You can login as an Admin using the test account:
 ---
 
 ## 7. Booking Conflict-Handling Logic ##
-  - The system prevents double-booking of the same time slot facilitated by the MySQL query:
+  - The system prevents double-booking of the same time slot by the folowing MySQL queries:
+
+  ```
+  CREATE TABLE `appointments` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user_id` int NOT NULL,
+  `date` date NOT NULL,
+  `time_slot` time NOT NULL,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `date` (`date`,`time_slot`),
+  KEY `user_id` (`user_id`),
+  CONSTRAINT `appointments_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
+)
+  ``` 
+  - I've added integrity constraints on the date and time_slot column
+  - The UNIQUE KEY will prevent the system from inserting a row with the same date and time_slot as an existing row;
 
   ```
   SELECT * FROM appointments WHERE date = ? AND time_slot = ?;
-
+  
   ```
   - If a result is found, the system rejects the booking with a 409 Conflict Response:
 

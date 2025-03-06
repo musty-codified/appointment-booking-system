@@ -203,7 +203,7 @@ const DataProvider = ({ children }) => {
   /**==========================================LOGOUT======================================= **/
   const logout = () => {
     localStorage.clear();
-    window.location.href = "/login";
+    window.location.href = "/";
   };
 
   return (

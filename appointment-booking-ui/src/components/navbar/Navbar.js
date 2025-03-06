@@ -34,7 +34,7 @@ const Navbar = () => {
                  <li><NavLink className= "nav-link text-dark"
                  to="/admin-dashboard"
                  style={({isActive})=> isActive ? activeStyles : null}
-                 >BOOKINGS</NavLink>
+                 >VIEW BOOKINGS</NavLink>
                  </li>
                 </>):
               
@@ -42,7 +42,7 @@ const Navbar = () => {
                 <li><NavLink className= "nav-link text-dark" 
                    to="/user-booking"
                    style={({isActive})=> isActive ? activeStyles : null}
-                 >BOOK AN APPOINTMENT</NavLink>
+                 >BOOK APPOINTMENT</NavLink>
                  </li>
                  
                  </>)              

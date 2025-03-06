@@ -2,7 +2,7 @@ import React from 'react'
 import Hero from './Hero.js'
 import { Outlet } from 'react-router-dom';
 
-const HomePage = () => {
+const LandingPage = () => {
   return (
     <div className=''>
       
@@ -13,4 +13,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default LandingPage

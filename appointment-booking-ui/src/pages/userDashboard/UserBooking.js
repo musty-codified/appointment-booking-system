@@ -28,7 +28,7 @@ const {
       <ul className="events">
         {bookedSlots.map((slot, index) => (
           <li key={index}>
-            <Badge status="error" text={slot} />
+            <Badge status="error" text={slot} style={{ color: "red" }}/>
           </li>
         ))}
       </ul>

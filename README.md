@@ -103,7 +103,7 @@ You can login as an Admin using the test account:
 ---
 
 ## 7. Booking Conflict-Handling Logic ##
-  - The system prevents double-booking of the same time slot by the folowing MySQL queries:
+  - The system prevents double-booking of the same time slot by the table definition and select query below:
 
   ```
   CREATE TABLE `appointments` (
